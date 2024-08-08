@@ -1,6 +1,8 @@
 from django.urls import path
 from . import views
 
-urlpattens = [
+app_name = 'api'
 
+urlpatterns = [
+    path('banner/', views.banner_list, name='banner'),
 ]
